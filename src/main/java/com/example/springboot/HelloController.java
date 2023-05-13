@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class HelloController {
 
 	@Autowired
@@ -25,6 +28,11 @@ public class HelloController {
 	public String getMessage(@PathVariable("id") long id) {
 		Message myMessage =  messagesRepository.getReferenceById(id);
 		return myMessage.setMessages();
+	}
+	// get all messages
+	@GetMapping("/messages")
+	public List<Message> getAll(){
+		return messagesRepository.findAll();
 	}
 	@PostMapping("/messages")
 	 Message messages(@RequestBody Message messages) {
