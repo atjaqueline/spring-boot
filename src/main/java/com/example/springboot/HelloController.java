@@ -20,6 +20,7 @@ public class HelloController {
 		return "Greetings from Spring Boot!";
 	}
 
+	// get messages by id
 	@GetMapping("/messages/{id}")
 	public String getMessage(@PathVariable("id") long id) {
 		Message myMessage =  messagesRepository.getReferenceById(id);
