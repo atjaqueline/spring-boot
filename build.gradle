@@ -22,6 +22,13 @@ dependencies {
 	// end::tests[]
 	implementation 'org.postgresql:postgresql'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'jakarta.validation:jakarta.validation-api:2.0.2'
+	implementation 'org.springframework:spring-web'
+	implementation 'org.springframework:spring-webmvc'
+
+
+
 
 }
 
