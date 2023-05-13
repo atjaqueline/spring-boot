@@ -9,7 +9,7 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "messages")
+    @Column(name = "messages", nullable = false)
     private String messages;
 
 
@@ -17,13 +17,14 @@ public class Message {
     }
 
     public Message(long id, String messages){
-      this.id = id;
-      this.messages = messages;
+        this.id = id;
+        this.messages = messages;
     }
-    public String getData() {
+
+    public String getMessages() {
         return messages;
     }
-    public String setData() {
+    public String setMessages() {
         return messages;
     }
 }

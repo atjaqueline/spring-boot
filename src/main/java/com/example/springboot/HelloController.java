@@ -23,7 +23,7 @@ public class HelloController {
 	@GetMapping("/messages/{id}")
 	public String getMessage(@PathVariable("id") long id) {
 		Message myMessage =  messagesRepository.getReferenceById(id);
-		return myMessage.getData();
+		return myMessage.setMessages();
 	}
 	@PostMapping("/messages")
 	 Message messages(@RequestBody Message messages) {
