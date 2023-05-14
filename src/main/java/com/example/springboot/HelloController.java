@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class HelloController {
@@ -30,6 +32,8 @@ public class HelloController {
 		return myMessage.setMessages();
 	}
 	// get all messages
+
+
 	@GetMapping("/messages")
 	public List<Message> getAll(){
 		return messagesRepository.findAll();
