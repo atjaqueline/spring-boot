@@ -27,11 +27,8 @@ dependencies {
 	implementation 'org.springframework:spring-web'
 	implementation 'org.springframework:spring-webmvc'
 	implementation 'org.hibernate:hibernate-core:6.2.2.Final'
-
-
-
-
-
+	implementation 'org.springframework.security:spring-security-core'
+	implementation 'com.auth0:java-jwt:4.4.0'
 }
 
 test {

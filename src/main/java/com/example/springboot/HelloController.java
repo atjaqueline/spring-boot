@@ -4,6 +4,7 @@ import com.example.springboot.Repository.MessagesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
@@ -37,6 +38,12 @@ public class HelloController {
 	@PostMapping("/messages")
 	Message messages(@RequestBody Message messages) {
 		return messagesRepository.save(messages);
+	}
+
+	@PutMapping("messages/{id}")
+	ResponseEntity<Message> updateMessage(@RequestBody Message messages){
+		Message result = messagesRepository.save(messages);
+		return ResponseEntity.ok().body(result);
 	}
 
 	// delete message by id
