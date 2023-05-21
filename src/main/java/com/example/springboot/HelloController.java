@@ -1,6 +1,8 @@
 package com.example.springboot;
 
 import com.example.springboot.Repository.MessagesRepository;
+import com.example.springboot.Repository.UpdatesRepository;
+import com.example.springboot.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +17,8 @@ public class HelloController {
 
 	@Autowired
 	MessagesRepository messagesRepository;
+	@Autowired
+	UpdatesRepository updatesRepository;
 
 	@GetMapping("/")
 	public String index() {
@@ -52,4 +56,15 @@ public class HelloController {
 		messagesRepository.deleteById(id);
 		return ResponseEntity.ok().build();
 	}
+
+	/*
+	 *  Updates Controller
+	 */
+
+	// get all updates
+	@GetMapping("/updates")
+	public List <Update> getUpdates() {
+		return  updatesRepository.findAll();
+	}
+
 }
