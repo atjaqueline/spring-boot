@@ -7,14 +7,13 @@ import jakarta.persistence.*;
 public class Update {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "update_generator")
     private Long id;
-
-    @Column(name = "title", nullable = false)
-    private String title;
 
     @Column(name = "affected_team", nullable = false)
     private String affected_team;
+    @Column(name = "title", nullable = false)
+    private String title;
 
     @Column(name = "description", nullable = false)
     private String description;
@@ -24,9 +23,9 @@ public class Update {
     public Update(){
 
     }
-    public Update(String title, String affected_team, String description, String submited_by) {
-        this.title = title;
+    public Update(String affected_team, String title, String description, String submited_by) {
         this.affected_team = affected_team;
+        this.title = title;
         this.description = description;
         this.submited_by = submited_by;
     }
