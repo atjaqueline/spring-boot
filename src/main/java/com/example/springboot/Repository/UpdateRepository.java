@@ -6,6 +6,6 @@ import com.example.springboot.Update;
 import java.util.List;
 
 @Repository
-public interface UpdatesRepository extends JpaRepository<Update, Long> {
-    List<Update> findByAffectedTeam(String affected_team);
+public interface UpdateRepository extends JpaRepository<Update, Long> {
+    List <Update> findByTitleContaining(String title);
 }
