@@ -5,3 +5,5 @@ CREATE TABLE updates (
     description VARCHAR NOT NULL,
     submited_by VARCHAR(25) NOT NULL
 );
+
+

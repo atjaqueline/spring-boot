@@ -5,3 +5,9 @@ CREATE TABLE updates (
     description VARCHAR NOT NULL,
     submited_by VARCHAR(25) NOT NULL
 );
+
+
+"title": "hello news",
+        "affected_team": "dsds",
+        "description": "As you might have expecteddddddddller, local banks to be closed as well",
+        "submited_by": "furgielidsddsfdcious"

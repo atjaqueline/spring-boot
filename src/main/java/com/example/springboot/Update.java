@@ -6,32 +6,29 @@ import jakarta.persistence.*;
 @Table(name = "updates")
 public class Update {
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "update_generator")
     private Long id;
 
-
-    @Column(name = "title", nullable = false)
+    @Column(name = "title")
     private String title;
 
-    @Column(name = "affected_team", nullable = false)
+    @Column(name = "affected_team")
     private String affected_team;
 
-    @Column(name = "description", nullable = false)
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "submited_by", nullable = false)
+    @Column(name = "submited_by")
     private String submited_by;
     public Update(){
 
     }
     public Update(String title,String affected_team, String description, String submited_by) {
-        this.affected_team = affected_team;
         this.title = title;
+        this.affected_team = affected_team;
         this.description = description;
         this.submited_by = submited_by;
     }
-
 
     public long getId() {
         return id;

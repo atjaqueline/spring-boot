@@ -34,7 +34,7 @@ public ResponseEntity<List<Comment>> getAllCommentsByUpdateId(@PathVariable(valu
     return new ResponseEntity<>(comments, HttpStatus.OK);
 }
 
-//needs fixing
+
 @PostMapping("/updates/{updateId}/comments")
     public ResponseEntity<Comment> createComment(@PathVariable(value="updateId") Long updateId, @RequestBody Comment commentRequest) {
     Comment comment = updateRepository.findById(updateId).map(update -> {
