@@ -7,7 +7,9 @@ CREATE TABLE updates (
 );
 
 
-"title": "hello news",
-        "affected_team": "dsds",
-        "description": "As you might have expecteddddddddller, local banks to be closed as well",
-        "submited_by": "furgielidsddsfdcious"
+{
+    "title": "thanksgiving news",
+    "affected_team":"marketing",
+    "description": "As you might have expected, every single one of the big banks will be closed on Thanksgiving. You can expect smaller, local banks to be closed as well",
+    "submited_by":"furgielicious"
+}

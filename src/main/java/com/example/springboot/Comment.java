@@ -13,7 +13,8 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comment_generator")
     private Long id;
-    @Lob
+
+    @Column(name = "content", columnDefinition="VARCHAR(128)")
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
