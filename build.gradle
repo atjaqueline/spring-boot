@@ -29,6 +29,15 @@ dependencies {
 	implementation 'org.hibernate:hibernate-core:6.2.2.Final'
 	implementation 'org.springframework.security:spring-security-core'
 	implementation 'com.auth0:java-jwt:4.4.0'
+	implementation 'org.springframework.security:spring-security-config'
+	implementation 'org.springframework.security:spring-security-jwt:1.1.1.RELEASE'
+	implementation 'org.springframework.security:spring-security-web:6.1.0'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'org.springframework.boot:spring-boot-starter-web:3.1.0'
+	implementation 'org.springframework.security:spring-security-core:3.2.1.RELEASE'
+	compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+
+
 }
 
 test {

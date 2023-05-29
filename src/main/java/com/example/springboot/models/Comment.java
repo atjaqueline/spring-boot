@@ -1,5 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.models;
 
+import com.example.springboot.models.Update;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import org.hibernate.annotations.OnDelete;

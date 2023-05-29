@@ -1,7 +1,7 @@
 package com.example.springboot;
 
 import com.example.springboot.Repository.UpdateRepository;
-import com.example.springboot.Update;
+import com.example.springboot.models.Update;
 import com.example.springboot.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
