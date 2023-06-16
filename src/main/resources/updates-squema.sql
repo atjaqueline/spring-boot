@@ -19,10 +19,7 @@ CREATE TABLE updates (
     "title": "Influencer Partnership Program",
     "affected_team":"Latam Marketing",
     "description": "We have identified key influencers in our industry who align with our brand values and target audience. We have successfully established mutually beneficial partnerships with these influencers to promote our products and services.",
-    "optional_details": "Our team is constantly identifying new influencers and monitoring campaign performance to ensure maximum ROI."
+    "optional_details": "Our team is constantly identifying new influencers and monitoring campaign performance to ensure maximum ROI.",
     "submited_by":"Carla"
 }
 
-{
-    "content":"nice day"
-}
