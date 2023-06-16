@@ -46,7 +46,7 @@ public class UpdateController {
     // post request - creates new update
     @PostMapping("/updates")
     public ResponseEntity<Update> createUpdate(@RequestBody Update update){
-        Update _update = updateRepository.save(new Update(update.getTitle(), update.getAffected_team(),update.getDescription(), update.getSubmited_by()));
+        Update _update = updateRepository.save(new Update(update.getTitle(), update.getAffected_team(),update.getDescription(), update.getOptional_details(), update.getSubmited_by()));
         return new ResponseEntity<>(_update, HttpStatus.CREATED);
         }
 

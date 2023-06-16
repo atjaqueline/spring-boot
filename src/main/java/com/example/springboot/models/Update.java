@@ -17,16 +17,18 @@ public class Update {
 
     @Column(name = "description")
     private String description;
-
+    @Column(name = "optional_details")
+    private String optional_details;
     @Column(name = "submited_by")
     private String submited_by;
     public Update(){
 
     }
-    public Update(String title,String affected_team, String description, String submited_by) {
+    public Update(String title,String affected_team, String description, String optional_details, String submited_by) {
         this.title = title;
         this.affected_team = affected_team;
         this.description = description;
+        this.optional_details= optional_details;
         this.submited_by = submited_by;
     }
 
@@ -58,6 +60,14 @@ public class Update {
         this.description = description;
     }
 
+    public String getOptional_details() {
+        return optional_details;
+    }
+
+    public void setOptional_details(String optional_details) {
+        this.optional_details = optional_details;
+    }
+
     public String getSubmited_by() {
         return submited_by;
     }
@@ -65,6 +75,5 @@ public class Update {
     public void setSubmited_by(String submited_by) {
         this.submited_by = submited_by;
     }
-
 
 }
