@@ -1,8 +1,8 @@
-package com.example.springboot;
+package com.um.springboot;
 
-import com.example.springboot.Repository.UpdateRepository;
-import com.example.springboot.models.Update;
-import com.example.springboot.exception.ResourceNotFoundException;
+import com.um.springboot.Repository.UpdateRepository;
+import com.um.springboot.models.Update;
+import com.um.springboot.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

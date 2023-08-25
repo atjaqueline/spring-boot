@@ -1,4 +1,4 @@
-package com.example.springboot.exception;
+package com.um.springboot.exception;
 
 import java.util.Date;
 
